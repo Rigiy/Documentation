@@ -868,12 +868,6 @@ body .redactor-box-fullscreen {
 .redactor-editor hr {
   margin-bottom: 15px;
 }
-.redactor-editor blockquote {
-  margin-left: 1.6em !important;
-  padding-left: 0;
-  color: #777;
-  font-style: italic;
-}
 .redactor-editor ul,
 .redactor-editor ol {
   padding-left: 2em;
