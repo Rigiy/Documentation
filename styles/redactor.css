@@ -347,23 +347,33 @@ body .redactor-box-fullscreen {
 .re-gallery:before {
   content: "\e61f";
 }
-.re-deleted { width: 13px; background: url("../img/strike.svg") center no-repeat; background-size: 13px 21px;  }
+.re-deleted { width: 13px; background: url("../img/strike.svg") center no-repeat; background-size: 13px 21px; }
+.re-deleted.redactor-act { background-image: url("../img/active/strike_active.svg") }
 
-.re-clear { width: 15px; position: absolute; top: 2px; left: 82px; margin: 0 !important; background: url("../img/p.svg") center no-repeat; background-size: 7px 21px;  }
+.re-clear { width: 15px; position: absolute; top: 2px; left: 82px; margin: 0 !important; background: url("../img/p.svg") center no-repeat; background-size: 7px 21px; }
+.re-clear.redactor-act { background-image: url("../img/active/p_active.svg") }
 
 .re-alignment { width: 15px; background: url("../img/center.svg") center no-repeat; background-size: 15px 21px; }
+.re-alignment.redactor-act { background-image: url("../img/active/center_active.svg") }
 
 .re-blockquote { width: 17px; background: url("../img/blockquote.svg") center no-repeat; background-size: 17px 21px; }
+.re-blockquote.redactor-act { background-image: url("../img/active/blockquote_active.svg") }
 
 .re-link { width: 18px; background: url("../img/link.svg") center no-repeat; background-size: 18px 21px; }
+.re-link.redactor-act { background-image: url("../img/active/link_active.svg") }
 
 .re-italic { width: 6px; background: url("../img/i.svg") center no-repeat; background-size: 6px 21px; }
+.re-italic.redactor-act { background-image: url("../img/active/i_active.svg") }
 
 .re-bold { width: 10px; background: url("../img/B.svg") center no-repeat; background-size: 10px 21px; }
+.re-bold.redactor-act { background-image: url("../img/active/B_active.svg") }
 
 .re-header1, .re-header2 { position: absolute; top: 0; left: 15px; margin: 0 !important; width: 21px; background: url("../img/h1.svg") center no-repeat; background-size: 21px 21px;}
+.re-header1.redactor-act { background-image: url("../img/active/h1_active.svg") }
 
 .re-header2 { left: 50px; background-image: url("../img/h2.svg"); }
+.re-header2.redactor-act { background-image: url("../img/active/h2_active.svg") }
+
 /*
 	Toolbar tooltip
 */
