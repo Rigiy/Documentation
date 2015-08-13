@@ -459,6 +459,7 @@ body:not(.editing) .CodeMirror-cursors {
           vertical-align: top;
           margin-right: 2px;
           font-size: 14px;
+          line-height: 18px;
           background: #000;
           color: #fff;
           cursor: pointer; }
@@ -477,6 +478,7 @@ body:not(.editing) .CodeMirror-cursors {
         font-size: 16px;
         color: #fff;
         margin-bottom: 20px;
+        vertical-align: top;
         background-image: linear-gradient(to bottom, rgba(49, 49, 47, 0.99), #262625); }
   .view #form1 {
     display: none; }
