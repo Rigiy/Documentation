@@ -46,19 +46,19 @@ img { vertical-align: top; max-width: 100%; }
 
     .subject { position: absolute; top: 0; left: 20px; font-size: 15px; color: #484848; text-decoration: none; line-height: 60px;
 
-        @include custom_breakpoint(1635) { line-height: 36px; }
+        @include custom_breakpoint(1520) { line-height: 36px; }
 
     }
 
     .user { @extend .subject; left: auto; right: 10px; top: 12px; margin: 0; width: 36px; height: 36px; border: 1px solid #DEDEDE; border-radius: 100%; overflow: hidden;
 
-        @include custom_breakpoint(1635) { top: 0; }
+        @include custom_breakpoint(1520) { top: 0; }
 
     }
 
     .wrap {
 
-        @include custom_breakpoint(1635) { max-width: 100%; padding: 0 53px 0 110px; position: relative; }
+        @include custom_breakpoint(1520) { max-width: 100%; padding: 0 53px 0 100px; position: relative; }
 
     }
 
@@ -102,7 +102,7 @@ img { vertical-align: top; max-width: 100%; }
 
     @include prefix(( user-select: none ), webkit moz ms );
 
-    &.btn-product { float: left; width: 25%; width: calc( 25% - 45px ); }
+    &.btn-product { float: left; width: 25%; width: calc( 25% - 45px ); margin-left: 15px; display: none; }
 
     &.icon-plus { background-image: url("../img/plus.svg"); }
 
@@ -244,7 +244,7 @@ body:not(.editing) {
 
 .nav { padding: 0; margin: 0; list-style-type: none;
 
-    .nav-item { display: block; padding: 0 20px; color: #000; text-decoration: none; font: 14px "Open Sans", serif; font-weight: 600; line-height: 30px; white-space: nowrap; overflow: hidden;
+    .nav-item { display: block; padding: 0 20px 0 0; color: #000; text-decoration: none; font: 14px "Open Sans", serif; font-weight: 600; line-height: 30px; white-space: nowrap; overflow: hidden;
 
         text-overflow: ellipsis; position: relative;
 
@@ -263,7 +263,7 @@ body:not(.editing) {
 
     .sub-nav { margin: 0; padding: 0; list-style-type: none;
 
-        .nav-item { padding: 0 30px; }
+        .nav-item { padding: 0 20px; }
 
     }
 
@@ -317,7 +317,7 @@ body:not(.editing) {
 
                 sub { @extend sup; font-size: 30px; line-height: 1.2; padding: 0; }
 
-                hr { height: 30px; margin: 0; border: none; }
+                hr { height: 24px; margin: 0 0 20px 0; border: none; }
 
                 a { color: #15c; }
 
@@ -355,7 +355,7 @@ body:not(.editing) {
 
 .editing .section:hover .btn-plus { visibility: visible; opacity: 1; top: 0; }
 
-.popup { visibility: hidden; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; z-index: -1; background: $white; overflow: auto;
+.popup { display: none; visibility: hidden; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; z-index: -1; background: $white; overflow: auto;
 
     @include prefix(( transition: all .5s ease ), webkit );
 

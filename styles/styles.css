@@ -78,7 +78,7 @@ img {
     color: #484848;
     text-decoration: none;
     line-height: 60px; }
-    @media (max-width: 1635px) {
+    @media (max-width: 1520px) {
       .header .subject, .header .user {
         line-height: 36px; } }
   .header .user {
@@ -91,13 +91,13 @@ img {
     border: 1px solid #DEDEDE;
     border-radius: 100%;
     overflow: hidden; }
-    @media (max-width: 1635px) {
+    @media (max-width: 1520px) {
       .header .user {
         top: 0; } }
-  @media (max-width: 1635px) {
+  @media (max-width: 1520px) {
     .header .wrap {
       max-width: 100%;
-      padding: 0 53px 0 110px;
+      padding: 0 53px 0 100px;
       position: relative; } }
 
 .search {
@@ -168,7 +168,9 @@ img {
   .btn.btn-product {
     float: left;
     width: 25%;
-    width: calc( 25% - 45px ); }
+    width: calc( 25% - 45px );
+    margin-left: 15px;
+    display: none; }
   .btn.icon-plus {
     background-image: url("../img/plus.svg"); }
   .btn.icon-image {
@@ -353,7 +355,7 @@ body:not(.editing) .CodeMirror-cursors {
   list-style-type: none; }
   .nav .nav-item {
     display: block;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     color: #000;
     text-decoration: none;
     font: 14px "Open Sans", serif;
@@ -376,7 +378,7 @@ body:not(.editing) .CodeMirror-cursors {
     padding: 0;
     list-style-type: none; }
     .nav .sub-nav .nav-item {
-      padding: 0 30px; }
+      padding: 0 20px; }
   .nav > .nav-list .nav-list {
     height: 0;
     overflow: hidden;
@@ -430,8 +432,8 @@ body:not(.editing) .CodeMirror-cursors {
         line-height: 1.2;
         padding: 0; }
       .view .section-wrap .section .sub-section hr {
-        height: 30px;
-        margin: 0;
+        height: 24px;
+        margin: 0 0 20px 0;
         border: none; }
       .view .section-wrap .section .sub-section a {
         color: #15c; }
@@ -489,6 +491,7 @@ body:not(.editing) .CodeMirror-cursors {
   top: 0; }
 
 .popup {
+  display: none;
   visibility: hidden;
   position: fixed;
   top: 0;
